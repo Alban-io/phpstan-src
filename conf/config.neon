@@ -1523,6 +1523,10 @@ services:
 		tags:
 			- phpstan.broker.dynamicMethodReturnTypeExtension
 
+	-
+		class: PHPStan\Type\Php\DatePeriodConstructorReturnTypeExtension
+		tags:
+			- phpstan.broker.dynamicStaticMethodReturnTypeExtension
 
 	exceptionTypeResolver:
 		class: PHPStan\Rules\Exceptions\ExceptionTypeResolver
